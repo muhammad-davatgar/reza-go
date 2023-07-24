@@ -3,14 +3,24 @@ package main
 import "fmt"
 
 func main() {
-	score := 0
 
-	for i := 11; i < 10; i++ {
-		fmt.Println("score : ", score)
-		fmt.Println("i : ", i)
-		score += 1
-		fmt.Println("score + i = ", score)
+	s := 10
+	d := 10
+	g := 10
+
+	if s > d {
+		fmt.Print("10 bigger than 8")
+	} else if s < d {
+		fmt.Print("10 smaller than 8")
+	} else if d > g {
+		fmt.Print("8 bigger than 2")
+	} else if d < g {
+		fmt.Print("8 smaller than 2")
+	} else if s < g {
+		fmt.Print("10 bigger than 2")
+	} else if s > g {
+		fmt.Print("10 smaller than 2")
+	} else {
+		fmt.Print("all numbers are equal ")
 	}
-
-	fmt.Println("outside : ", score)
 }
