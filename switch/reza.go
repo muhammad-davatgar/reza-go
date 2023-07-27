@@ -1,8 +1,8 @@
-package main
+package switch_command
 
 import "fmt"
 
-func main() {
+func Reza() {
 	println("لطفا حالت خود را وارد کنید")
 	var status string
 
@@ -27,6 +27,7 @@ func main() {
 
 	case unbusy:
 		fmt.Println("تو بی کار هستی")
+
 	}
 
 }
