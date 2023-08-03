@@ -6,33 +6,18 @@ import (
 )
 
 func main() {
-	// var i int
-	// i = -10
+	var a string
+	fmt.Println("inter studet count")
+	fmt.Scanln(&a)
 
-	// a := uint(i)
-	// fmt.Println(a)
-	// fmt.Printf("i : %T \n", i)
-	// fmt.Printf("a : %T", a)
+	i, _ := strconv.Atoi(a)
 
-	// var j float32
+	Myarray := make([]string, i)
 
-	// j = 10.99
+	for s := 0; s < i; s++ {
+		fmt.Println("interr student", s+1, "name")
+		fmt.Scanln(&Myarray[s])
+	}
+	fmt.Println(Myarray)
 
-	// fmt.Println(int(j))
-
-	// d := 10
-
-	// s := fmt.Sprintf("a %d", d)
-
-	// fmt.Printf("s : %T", s)
-
-	s := "23"
-	var a uint64
-
-	i, _ := strconv.ParseInt(s, 10, 0)
-	fmt.Println(i)
-	fmt.Printf("i : %T", i)
-
-	a = uint64(i)
-	fmt.Printf("a : %T ", a)
 }

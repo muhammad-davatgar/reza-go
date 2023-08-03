@@ -34,5 +34,4 @@ func main() {
 
 	fmt.Println("product 1 : ", product1)
 	fmt.Println("product 2 : ", product2)
-
 }
