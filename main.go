@@ -1,32 +1,38 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func main() {
-	println("لطفا حالت خود را وارد کنید")
-	var status string
+	// var i int
+	// i = -10
 
-	const (
-		died   = "died"
-		live   = "live"
-		busy   = "busy"
-		unbusy = "unbusy"
-	)
+	// a := uint(i)
+	// fmt.Println(a)
+	// fmt.Printf("i : %T \n", i)
+	// fmt.Printf("a : %T", a)
 
-	fmt.Scanln(&status)
+	// var j float32
 
-	switch status {
-	case died:
-		fmt.Println("تو مرده هستی")
+	// j = 10.99
 
-	case live:
-		fmt.Println("تو زنده هستی")
+	// fmt.Println(int(j))
 
-	case busy:
-		fmt.Println("تو مشغول هستی")
+	// d := 10
 
-	case unbusy:
-		fmt.Println("تو بی کار هستی")
-	}
+	// s := fmt.Sprintf("a %d", d)
 
+	// fmt.Printf("s : %T", s)
+
+	s := "23"
+	var a uint64
+
+	i, _ := strconv.ParseInt(s, 10, 0)
+	fmt.Println(i)
+	fmt.Printf("i : %T", i)
+
+	a = uint64(i)
+	fmt.Printf("a : %T ", a)
 }

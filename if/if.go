@@ -1,7 +1,9 @@
-package if
+package if_tmp
 
-func Tmp(){
-		// var (
+import "fmt"
+
+func Tmp() {
+	// var (
 	// 	i = 4
 	// 	j = 5
 	// 	k = 6
