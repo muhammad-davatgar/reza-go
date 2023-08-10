@@ -8,9 +8,9 @@ func Slice() {
 	fmt.Println(arr[0])
 	fmt.Println(arr[0:3])
 
-	a := []int{1, 2, 3, 4, 5}
+	a := []int{1, 2, 3, 4, 5} // array
 
-	b := a[0:3]
+	b := a[0:3] // slice
 
 	fmt.Println(a)
 	fmt.Println(b)
