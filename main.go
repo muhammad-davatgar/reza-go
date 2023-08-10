@@ -3,25 +3,19 @@ package main
 import "fmt"
 
 func main() {
-
-	Power(2, 3)
-
-	i, j := Reza(10)
-
-	fmt.Println(i)
-	fmt.Println(j)
-}
-
-func Power(intfirst, intsecond int) {
-	natije := intfirst
-	var i int
-	for i = 1; i < intsecond; i++ {
-		natije *= intfirst
+	for i := 0; i <= 5; i++ {
+		fmt.Println(i)
 	}
 
-	fmt.Println(natije)
+	z := 10
+
+	j := z + 5
+	PrintNum(0)
 }
 
-func Reza(x int) (int, int) {
-	return x - 1, x + 1
+func PrintNum(num int) {
+	fmt.Println(num)
+	if num != 5 {
+		PrintNum(num + 1)
+	}
 }
