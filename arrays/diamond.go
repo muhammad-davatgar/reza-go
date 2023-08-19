@@ -34,7 +34,7 @@ func main() {
 func IncreaseStars(arrPointer *[]string) {
 	found := false
 
-	for i := range arrPointer {
+	for i := range *arrPointer {
 		if (*arrPointer)[i] == "*" && !found {
 			(*arrPointer)[i-1] = "*"
 			found = true
