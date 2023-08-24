@@ -1,8 +1,8 @@
-package main
+package arrays
 
 import "fmt"
 
-func main() {
+func init() {
 	n := 13
 
 	arr := make([]string, n)
