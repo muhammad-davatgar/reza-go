@@ -1,8 +1,8 @@
-package main
+package strct
 
 import "fmt"
 
-func main() {
+func Ananymos() {
 	// var b int = 10
 	// var i []int = []int{1, 2, 3}
 
