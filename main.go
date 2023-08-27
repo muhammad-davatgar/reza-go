@@ -1,21 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
+
+type adad int
 
 func main() {
-	// var b int = 10
-	// var i []int = []int{1, 2, 3}
+	var nomre adad
+	nomre = 10
 
-	var s []struct {
-		Name string
-		Age  uint8
-	} = []struct {
-		Name string
-		Age  uint8
-	}{
-		{Name: "reza", Age: 16},
-		{Name: "behzad", Age: 32},
-	}
+	fmt.Println(nomre.Add(nomre))
+}
 
-	fmt.Println(s[0].Name)
+func (a adad) Add(s adad) adad {
+	return a + a
 }
