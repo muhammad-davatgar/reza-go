@@ -18,7 +18,7 @@ func (h Human) SayAge() {
 }
 
 func (Human) SayRace() {
-	fmt.Println("im a human")
+
 }
 
 func (h *Human) SetNationalNumber(number string) {
