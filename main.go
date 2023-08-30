@@ -2,17 +2,17 @@ package main
 
 import (
 	"fmt"
+	"reza/ds"
 )
 
-type adad int
-
 func main() {
-	var nomre adad
-	nomre = 10
+	s := ds.Stack{}
 
-	fmt.Println(nomre.Add(nomre))
-}
+	s.Push(10)
+	s.Push(20)
+	s.Print()
+	fmt.Println(s.Pop())
+	s.Print()
+	fmt.Println(s.Read(0))
 
-func (a adad) Add(s adad) adad {
-	return a + a
 }
