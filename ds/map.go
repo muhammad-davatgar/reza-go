@@ -22,3 +22,16 @@ func hm() {
 
 	fmt.Println(hm1)
 }
+
+func ok() {
+	a := make(map[string]int)
+
+	a["reza"] = 16
+
+	age, ok := a["reza"]
+	if !ok {
+		fmt.Println("invalid key")
+	}
+	fmt.Println(ok)
+	fmt.Println(age)
+}

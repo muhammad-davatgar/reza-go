@@ -18,7 +18,7 @@ func main() {
 type Cat struct{}
 
 func (Cat) Meaw() {
-	fmt.Println("meaw")
+	fmt.Println("Meaaaaaw")
 }
 
 type Tiger struct{}

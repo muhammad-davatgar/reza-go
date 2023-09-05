@@ -1,11 +1,24 @@
-package main
+package intr
 
 import (
 	"errors"
 	"fmt"
+	"strconv"
 )
 
-func main() {
+func Err() {
+	a := "af10"
+
+	b, err := strconv.Atoi(a)
+	if err != nil {
+		fmt.Println("invalid number , ", err)
+		return
+
+	}
+	fmt.Println(b)
+}
+
+func start() {
 	err := ErrorPune(2)
 	if err != nil {
 		if errors.As(err, &A{}) {
